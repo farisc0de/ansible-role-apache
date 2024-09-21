@@ -69,7 +69,7 @@ apache_packages_state: present
 # Apache MPM module configuration.
 # MPM module to use. Recommended values: `prefork` or `worker`
 
-apache_mpm: true
+apache_mpm: false
 
 apache_mpm_module: "prefork"
 
