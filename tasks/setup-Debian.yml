@@ -1,4 +1,7 @@
 ---
+- name: Add Apache2 repo.
+  apt_repository: "repo=ppa:ondrej/apache2"
+
 - name: Update apt cache.
   apt: update_cache=yes cache_valid_time=3600
 
