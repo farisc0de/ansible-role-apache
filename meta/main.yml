@@ -4,6 +4,7 @@ dependencies: []
 galaxy_info:
   role_name: apache
   author: farisc0de
+  namespace: farisc0de
   description: Apache 2.x for Linux.
   company: "Innovaox"
   license: "license (BSD, MIT)"
