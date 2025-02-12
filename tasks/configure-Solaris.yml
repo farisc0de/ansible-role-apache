@@ -18,3 +18,13 @@
     mode: 0644
   notify: restart apache
   when: apache_create_vhosts | bool
+
+- name: Update MPM settings.
+  template:
+    src: "{{ apache_mpm_template }}"
+    dest: "{{ apache_conf_path }}/mpm.conf"
+    owner: root
+    group: root
+    mode: 0644
+  notify: restart apache
+  when: apache_mpm | bool
